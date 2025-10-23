@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoGo Delivery – SMS Opt-In (CTA Evidence)</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#f7f7f8;margin:0;color:#111}
+    .wrap{max-width:720px;margin:48px auto;padding:24px}
+    .card{background:#fff;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.06);padding:28px;border-left:4px solid #ff1b31}
+    h1{margin:.2rem 0 1rem;font-size:1.6rem}
+    p{line-height:1.55;margin:.3rem 0}
+    label{font-weight:600;margin-top:10px;display:block}
+    input{width:100%;padding:12px 14px;border-radius:8px;border:1px solid #cfd3d8;margin-top:6px;font-size:16px}
+    .disclosure{background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;padding:12px;margin:14px 0}
+    .disclosure small{display:block;color:#444}
+    .btn{background:#ff1b31;color:#fff;border:0;border-radius:10px;padding:12px 18px;font-weight:700;margin-top:10px;cursor:not-allowed;opacity:.6}
+    .links{margin-top:12px;font-size:14px}
+    .links a{color:#0b64d6;text-decoration:none}
+    .badge{display:inline-block;background:#111;color:#fff;border-radius:999px;font-size:12px;padding:4px 10px;margin-bottom:10px}
+    .note{font-size:13px;color:#555;margin-top:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <span class="badge">CTA Evidence</span>
+      <h1>Receive MoGo Delivery text updates</h1>
+      <p>Example of the exact disclosure shown where customers provide their mobile number during account sign-up or when booking a delivery.</p>
+
+      <form>
+        <label for="phone">Mobile number</label>
+        <input id="phone" type="tel" placeholder="+1 555 555 5555" inputmode="tel" aria-describedby="sms-disclosure" />
+
+        <div id="sms-disclosure" class="disclosure">
+          <small>
+            By providing your mobile number, you agree to receive transactional text messages from MoGo Delivery about your
+            bookings, delivery updates, and invoices. Message frequency varies per event (typically 0–5 msgs/week).
+            Message &amp; data rates may apply. Reply <strong>STOP</strong> to opt out, <strong>HELP</strong> for help.
+            See our <a href="https://legal.mogodelivery.com/terms.html">Terms of Service</a> and
+            <a href="https://legal.mogodelivery.com/privacy.html">Privacy Policy</a>.
+          </small>
+        </div>
+
+        <button class="btn" type="button" aria-disabled="true" title="Demo page for carrier review only">
+          Submit (disabled on demo)
+        </button>
+
+        <p class="note">
+          This page is a static demonstration for carrier review. Production submissions occur within the MoGo website/app
+          using the same disclosure language and opt-in flow.
+        </p>
+
+        <div class="links">
+          <a href="https://legal.mogodelivery.com/terms.html">Terms of Service</a> ·
+          <a href="https://legal.mogodelivery.com/privacy.html">Privacy Policy</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
